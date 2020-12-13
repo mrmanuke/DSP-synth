@@ -1,3 +1,4 @@
+import math
 import sys
 import mido
 import time
@@ -10,6 +11,31 @@ running = True
 loadingDSP = True
 profile_xml_files = []
 oscs = []
+noteFreqs = []
+releasetime = 0.1
+
+for i in range(0, 150):
+	f = 440 * math.pow(2, (i-69)/12)
+	noteFreqs.append(f)
+
+class Osc:
+	def __init__(self, freqAddr, adsrAddr, velAddr):
+		self.fAddr = freqAddr
+		self.aAddr = adsrAddr
+		sell.vAddr = velAddr
+		self.n = 60
+		self.offtime = 0
+
+	def turnOn(note, velocity)
+		self.n = note
+		#write frequency to faddr
+		#write velocity to vaddr
+		#write "1" to adsr
+
+	def turnOff()
+		#write "0" to adsr
+		#set offtime for when this osc will be available again
+		self.offtime = time.clock_gettime(time.CLOCK_MONOTONIC) + releasetime
 
 def handle_message(message):
         if message.type.find(clockmsg) == -1:

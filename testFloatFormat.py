@@ -12,7 +12,7 @@ result = dspfloats.to523x(x)
 for i in range(0, len(result)):
 	print("byte", i, ": ", result[i])
 
-print("convert", x, "to 8.24x")
+print("convert", x, "to 8.24")
 result = dspfloats.to824x(x)
 for i in range(0, len(result)):
 	print("byte", i, ": ", result[i])

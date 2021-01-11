@@ -1,4 +1,5 @@
 <PROFILES>
-	<file>dspdac-noautomute.xml</file>
-	<file>qwert.xml</file>
+	<file>./xml_profiles/adsrSynth.xml</file>
+	<file>./xml_profiles/VCDSynth.xml</file>
+	<file>./xml_profiles/adsrPoly.xml</file>
 </PROFILES>

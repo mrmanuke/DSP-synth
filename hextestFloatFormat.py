@@ -1,7 +1,7 @@
 import dspFormat as dspfloats
 import sys
 
-x = float(sys.argv[1])
+x = int(sys.argv[1], 16)
 print("convert", x, "to 5.23:")
 result = dspfloats.to523(x)
 for i in range(0, len(result)):
